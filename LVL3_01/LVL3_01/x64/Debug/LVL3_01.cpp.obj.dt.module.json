@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "LVL3_01\\x64\\Debug\\LVL3_01.obj",
+            "outputs": [
+                "LVL3_01\\x64\\Debug\\LVL3_01.cpp.obj.dt.module.json",
+                "LVL3_01\\x64\\Debug\\LVL3_01.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
