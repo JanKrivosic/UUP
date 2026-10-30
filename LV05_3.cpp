@@ -1,25 +1,37 @@
-//Noah Bozic
-
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int a;
-    int b;
-    int c;
-    cout << "Unesite vrijeme tri signala: a, b i c." << endl;
-    cin >> a >> b >> c;
-    char Pobjednik = 'A';
-    int najmanjaVrijednost = a;
-    if (b < a) {
-        Pobjednik = 'B';
-        najmanjaVrijednost = b;
+int main() {
+    int k, m;
+    int s, d, j;
+
+    cin >> k >> m;
+
+    s = k / 100;
+    d = (k / 10) % 10;
+    j = k % 10;
+
+    if (s == d || s == j || d == j) {
+        cout << "NEVALJAN KOD";
     }
-    if (c < b) {
-        Pobjednik = 'C';
-        najmanjaVrijednost = c;
+    else {
+        if (m == 0) {
+            if ((s + d + j) % 2 == 0) {
+                cout << "OTVORENO";
+            }
+            else {
+                cout << "ZATVORENO";
+            }
+        }
+        else {
+            if (d > j) {
+                cout << "OTVORENO";
+            }
+            else {
+                cout << "ZATVORENO";
+            }
+        }
     }
-    cout << Pobjednik << " " << najmanjaVrijednost;
+
     return 0;
 }
